@@ -4,34 +4,238 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>La Délicieuserie — Biscuiterie artisanale personnalisée à Calais</title>
-  <link rel="stylesheet" href="dist/styles.min.css" onerror="this.href='styles.css'">
+  <meta name="description" content="Sablés artisanaux 100% personnalisables, pour particuliers et entreprises. Fabrication à Calais avec des ingrédients bio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>La Délicieuserie</h1>
-    <nav>
-      <a href="#produits">Produits</a>
-      <a href="#entreprises">Entreprises</a>
-      <a href="#apropos">À propos</a>
-      <a href="#tarifs">Tarifs</a>
-      <a href="#temoignages">Avis</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header id="accueil" class="site-header">
+    <div class="top-banner">
+      <div class="container">
+        <p>Commandes sur mesure • Retrait à Calais • Envoi France métropolitaine</p>
+        <div class="top-banner__cta">
+          <a class="top-link" href="tel:+33600000000">06 00 00 00 00</a>
+          <a class="top-link" href="#contact">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container navbar" role="navigation" aria-label="Navigation principale">
+      <a class="brand" href="#accueil">
+        <img src="assets/logo.png" alt="Logo La Délicieuserie" />
+        <span>
+          <strong>La Délicieuserie</strong>
+          <small>Biscuiterie artisanale personnalisée — Calais</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu-principal" class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Les biscuits</a>
+        <a href="#entreprises">Entreprises</a>
+        <a href="#apropos">À propos</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#temoignages">Avis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <div class="container hero__content">
+        <p class="hero__subtitle">Sablés sur‑mesure</p>
+        <h1 class="hero__title">Un logo, un prénom, un mot… transformés en gourmandise unique</h1>
+        <p class="hero__text">Biscuits façonnés à la main, ingrédients bio, personnalisables pour vos événements et cadeaux d'entreprise.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#produits">Voir les modèles</a>
+          <a class="btn btn--ghost" href="#contact">Obtenir un devis</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main id="main">
-    <section id="produits"><h2>Produits</h2></section>
-    <section id="entreprises"><h2>Entreprises</h2></section>
-    <section id="apropos"><h2>À propos</h2></section>
-    <section id="tarifs"><h2>Tarifs</h2></section>
-    <section id="temoignages"><h2>Témoignages</h2></section>
-    <section id="contact"><h2>Contact</h2></section>
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <h2 id="highlights-title" class="section-title">Pourquoi choisir La Délicieuserie&nbsp;?</h2>
+        <p class="section-subtitle">Des sablés beaux, bons, et vraiment à votre image.</p>
+        <div class="highlight-grid">
+          <article class="highlight-card"><div class="highlight-icon" aria-hidden="true">🌾</div><h3>Ingrédients bio</h3><p>Farines, œufs, beurre et sucres issus de l’agriculture biologique.</p></article>
+          <article class="highlight-card"><div class="highlight-icon" aria-hidden="true">🎨</div><h3>100% personnalisés</h3><p>Formes, tailles, prénoms, dates, logos et motifs embossés (sans glaçage).</p></article>
+          <article class="highlight-card"><div class="highlight-icon" aria-hidden="true">🤝</div><h3>Accompagnement</h3><p>Maquette rapide et conseils pour un rendu parfait le jour J.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="produits" class="produits" aria-labelledby="produits-title">
+      <div class="container">
+        <h2 id="produits-title" class="section-title">Les biscuits</h2>
+        <p class="section-subtitle">Quelques inspirations — tout est ajustable à votre univers.</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="images/produit1.jpg" alt="Sablés prénoms pour baptême" />
+            <div class="product-card__body">
+              <span class="chip">Événement</span>
+              <h3>Sablés prénoms</h3>
+              <p>Parfaits pour baptêmes, naissances, anniversaires.</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/produit2.jpg" alt="Sablés logo entreprise embossés" />
+            <div class="product-card__body">
+              <span class="chip">Pro</span>
+              <h3>Sablés logo</h3>
+              <p>Idéals pour séminaires, openings, cadeaux clients.</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/produit3.jpg" alt="Sablés thème mariage" />
+            <div class="product-card__body">
+              <span class="chip">Cérémonie</span>
+              <h3>Collection mariage</h3>
+              <p>Formes élégantes, monogrammes et dates embossées.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="entreprises" class="entreprises" aria-labelledby="entreprises-title">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="entreprises-title" class="section-title">Pour les entreprises</h2>
+          <p class="section-subtitle">Des sablés à votre logo pour événements, accueils clients, lancements et cadeaux collaborateurs.</p>
+        </div>
+        <div class="logo-wall" aria-label="Quelques références">
+          <img src="images/logos/orpi.png" alt="ORPI" />
+          <img src="images/logos/peugeot.png" alt="Peugeot" />
+          <img src="images/logos/citroen.png" alt="Citroën" />
+          <img src="images/logos/casino-calais.png" alt="Casino de Calais" />
+          <img src="images/logos/airbnb.png" alt="Hôtes Airbnb et gîtes" />
+        </div>
+        <ul class="points-pro">
+          <li>Logo embossé (net et durable) — pas d’encre, pas de glaçage.</li>
+          <li>Formats individuels (sachet) ou vrac — options ruban/étiquette.</li>
+          <li>Délais express possibles selon quantités.</li>
+        </ul>
+        <div class="actions-pro">
+          <a class="btn btn--primary" href="#contact">Demander un devis pro</a>
+          <a class="btn btn--ghost" href="#tarifs">Voir les tarifs indicatifs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifs" class="tarifs" aria-labelledby="tarifs-title">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="tarifs-title" class="section-title">Tarifs indicatifs</h2>
+          <p class="section-subtitle">Prix TTC indicatifs — varie selon taille, forme, personnalisation et conditionnement. Devis précis sous 24h ouvrées.</p>
+        </div>
+        <div class="tarif-grid">
+          <article class="tarif-card">
+            <h3>Sablés prénoms</h3>
+            <p class="tarif">à partir de <strong>2,20€</strong> / pièce</p>
+            <ul>
+              <li>Min. 20 pièces</li>
+              <li>Formes standards</li>
+              <li>Prénom/date embossés</li>
+            </ul>
+          </article>
+          <article class="tarif-card">
+            <h3>Sablés logo (pro)</h3>
+            <p class="tarif"><strong>2,50–3,50€</strong> / pièce</p>
+            <ul>
+              <li>Selon taille & complexité du logo</li>
+              <li>Option étiquette +0,15€</li>
+              <li>Min. 50 pièces</li>
+            </ul>
+          </article>
+          <article class="tarif-card">
+            <h3>Collection mariage</h3>
+            <p class="tarif">à partir de <strong>2,40€</strong> / pièce</p>
+            <ul>
+              <li>Monogramme & date</li>
+              <li>Formats assortis possibles</li>
+              <li>Min. 30 pièces</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">👉 Conditionnement, rubans et expédition sur devis. Remises dégressives selon quantités.</p>
+      </div>
+    </section>
+
+    <section id="temoignages" class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title" class="section-title">Elles & ils en parlent</h2>
+        <p class="section-subtitle">Des retours qui donnent le sourire.</p>
+        <div class="slider" role="region" aria-live="polite">
+          <button class="slider__btn" data-dir="prev" aria-label="Témoignage précédent">‹</button>
+          <div class="slider__track">
+            <figure class="testimonial"><blockquote>« Des biscuits magnifiques pour notre mariage, et un accompagnement au top ! »</blockquote><figcaption>— Élodie</figcaption></figure>
+            <figure class="testimonial"><blockquote>« Nos clients ont adoré les sablés à notre logo. Super qualité ! »</blockquote><figcaption>— Alex, ORPI</figcaption></figure>
+            <figure class="testimonial"><blockquote>« Service rapide et résultat fidèle à la maquette. »</blockquote><figcaption>— Marc</figcaption></figure>
+          </div>
+          <button class="slider__btn" data-dir="next" aria-label="Témoignage suivant">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div>
+          <h2 id="contact-title" class="section-title">Contact & informations</h2>
+          <p class="section-subtitle">Retrait à Calais — Envoi possible (France).</p>
+          <ul class="contact__list">
+            <li class="contact__item">📞 <a href="tel:+33600000000">06 00 00 00 00</a></li>
+            <li class="contact__item">✉️ <a href="mailto:contact@exemple.fr">contact@exemple.fr</a></li>
+            <li class="contact__item">📍 Calais, France</li>
+          </ul>
+          <p class="contact__info">Dites‑nous l’occasion, le texte, le nombre de pièces et une idée de délai ; on s’occupe du reste.</p>
+        </div>
+        <form class="contact__form" name="contact" netlify>
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input id="name" name="name" type="text" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse e‑mail</label>
+            <input id="email" name="email" type="email" placeholder="vous@exemple.fr" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Parlez‑nous de votre projet"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Envoyer</button>
+          <p class="form-disclaimer">En soumettant ce formulaire, vous acceptez d’être recontacté·e par e‑mail.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> La Délicieuserie</p>
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <strong>La Délicieuserie</strong>
+        <p>Biscuiterie artisanale — Calais</p>
+      </div>
+      <div>
+        <p>&copy; <span id="year"></span> Tous droits réservés.</p>
+        <a href="#">Mentions légales</a>
+      </div>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="dist/script.min.js" onerror="this.src='script.js'"></script>
+  <script src="script.js"></script>
 </body>
 </html>
